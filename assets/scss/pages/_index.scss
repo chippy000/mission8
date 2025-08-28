@@ -159,7 +159,6 @@
 //靈感地圖
 .inspiration {
   .btn {
-
     &:hover,
     &:active,
     &:focus {
@@ -172,13 +171,19 @@
     color: $white;
     background-color: $primary-100 !important;
   }
-
+  .swiper-slide{
+    max-width: 312px;
+    //height: 610px;
+    @media (min-width: 992px) {
+      max-width: 746px;
+      height: 444px;
+    }
+  }
   .card {
-
     //width: 610px;
     @media (min-width: 992px) {
-      width: 746px;
-      height: 444px;
+      // width: 746px;
+      // height: 444px;
     }
 
     img {
